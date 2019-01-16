@@ -1,5 +1,6 @@
 package com.mkraskiewicz.petclinic.controllers;
 
+import com.mkraskiewicz.petclinic.ControllerTests;
 import com.mkraskiewicz.petclinic.fauxspring.Model;
 import com.mkraskiewicz.petclinic.fauxspring.ModelMapImpl;
 import com.mkraskiewicz.petclinic.model.Vet;
@@ -13,9 +14,8 @@ import org.junit.jupiter.api.Test;
 import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
-class VetControllerTest {
+class VetControllerTest implements ControllerTests {
 
     VetService vetService;
     SpecialtyService specialtyService;

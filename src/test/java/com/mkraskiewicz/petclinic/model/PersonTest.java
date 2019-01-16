@@ -1,10 +1,12 @@
 package com.mkraskiewicz.petclinic.model;
 
+import com.mkraskiewicz.petclinic.ModelTests;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class PersonTest {
+class PersonTest implements ModelTests {
 
     @Test
     void groupedAssertions() {
@@ -28,4 +30,5 @@ class PersonTest {
                 () -> assertEquals(person.getFirstName(), "Peter", "First Name Failed"),
                 () -> assertEquals(person.getLastName(), "Griffin"));
     }
+
 }

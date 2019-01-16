@@ -1,6 +1,6 @@
 package com.mkraskiewicz.petclinic.controllers;
 
-import org.assertj.core.api.Assertions;
+import com.mkraskiewicz.petclinic.ControllerTests;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
@@ -16,7 +16,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-class IndexControllerTest {
+
+class IndexControllerTest implements ControllerTests {
 
     IndexController controller;
 
